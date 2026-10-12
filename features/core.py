@@ -54,8 +54,8 @@ def survey():
     data.append(job)
     medical_situation = input("Do you currently have any medical issues that would require major spending or saving towards? Enter yes or no. ")
     data.append(medical_situation)
-    housing_situation = int(input("Do you own a house that you pay a mortage on or rent a place? Enter as '1' or '2' respectively."))
+    housing_situation = int(input("Do you own a house that you pay a mortage on or rent a place? Enter as '1' or '2' respectively. "))
     data.append(housing_situation)
-    family_financial_status = input("Would you say your family is financially stable enough to support you or do they rely on you primarily? Enter '1' or '2' respectively.")
+    family_financial_status = input("Would you say your family is financially stable enough to support you or do they rely on you primarily? Enter '1' or '2' respectively. ")
     data.append(family_financial_status)
     return data
