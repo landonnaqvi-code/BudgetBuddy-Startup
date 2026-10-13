@@ -29,7 +29,7 @@ python -m unittest
 
 ## Team
 
-<!-- Add yourself here on your Git lesson: - Your Name (role) -->
+- Landon (Building BudgetBuddy)<!-- Add yourself here on your Git lesson: - Your Name (role) -->
 
 - (your squad will add themselves here)
 
