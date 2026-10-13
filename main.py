@@ -23,6 +23,7 @@ def show_menu():
 
 def main():
     data = storage.load_data()
+    pre_app_survey_data = core.survey()
     while True:
         show_menu()
         try:
