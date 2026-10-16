@@ -38,7 +38,7 @@ def last_transaction(transactions):
 
 
 def total_spent(transactions):
-    return len(transactions)
+    return sum(t["amount"] for t in transactions)
 
 
 def average_transaction(transactions):
