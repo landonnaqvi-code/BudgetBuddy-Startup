@@ -19,6 +19,13 @@ class TestCore(unittest.TestCase):
         self.assertEqual(tx["id"], 2)
         self.assertEqual(len(data["transactions"]), 2)
 
+    def test_big_expenses(self):
+        data = {"transactions": [{"id": 1, "description": "t", "amount": 15.0, "category": "general"}]}
+        returned_data = core.big_expenses(data["transactions"], 10)
+        self.assertEqual(returned_data, data["transactions"])
+        returned_data = core.big_expenses(data["transactions"], 20)
+        self.assertEqual(returned_data, [])
+
 
 if __name__ == "__main__":
     unittest.main()
