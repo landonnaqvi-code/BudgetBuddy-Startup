@@ -34,6 +34,7 @@ def count_by_category(transactions):
 
 
 def last_transaction(transactions):
+    """Takes a list of transactions as a parameter and returns the most recently added item in that list."""
     return transactions[len(transactions) - 1]
 
 
@@ -59,3 +60,10 @@ def survey():
     family_financial_status = input("Would you say your family is financially stable enough to support you or do they rely on you primarily? Enter '1' or '2' respectively. ")
     data.append(family_financial_status)
     return data
+
+def big_expenses(transactions, threshold):
+    transaction_list = []
+    for t in transactions:
+        if t["amount"] > threshold:
+            transaction_list.append(t)
+    return transaction_list
