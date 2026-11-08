@@ -34,6 +34,7 @@ def count_by_category(transactions):
 
 
 def last_transaction(transactions):
+    """Takes a list of transactions as a parameter and returns the most recently added item in that list."""
     return transactions[len(transactions) - 1]
 
 
