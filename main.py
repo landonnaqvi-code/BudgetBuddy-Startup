@@ -18,6 +18,7 @@ def show_menu():
     print("6) Category breakdown")
     print("7) Spending summary")
     print("8) Account summary")
+    print("10) See Financial Situation")
     print("0) Quit")
 
 
@@ -59,6 +60,17 @@ def main():
                   " transactions (avg $" + str(core.average_transaction(txns)) + ").")
         elif choice == "8":
             print(reports.account_summary(data))
+        elif choice == "10":
+            for x in range(len(pre_app_survey_data)):
+                if x == 0:
+                    print("Part-time or Full-time: ")
+                elif x == 1:
+                    print("Medical Issues: ")
+                elif x == 2:
+                    print("1) Homeowner 2) Renting a Place: ")
+                else:
+                    print("1) Stable Family 2) Family Relies on You: ")
+                print(pre_app_survey_data[x])
         else:
             print("Please pick a number from the menu.")
 
