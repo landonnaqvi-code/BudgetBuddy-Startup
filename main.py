@@ -18,6 +18,7 @@ def show_menu():
     print("6) Category breakdown")
     print("7) Spending summary")
     print("8) Account summary")
+    print("9) See transactions that surpass a set threshold")
     print("0) Quit")
 
 
@@ -59,6 +60,9 @@ def main():
                   " transactions (avg $" + str(core.average_transaction(txns)) + ").")
         elif choice == "8":
             print(reports.account_summary(data))
+        elif choice == "9":
+            threshold = int(input("What threshold would you like the items to be above? "))
+            print(core.big_expenses(core.get_transactions(data), threshold))
         else:
             print("Please pick a number from the menu.")
 
