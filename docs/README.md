@@ -1,8 +1,12 @@
 # BudgetBuddy
 
-A small spending/allowance tracker you run in the terminal. Add transactions,
-list them, and see your balance. This is your squad's starting product for
-Elite 101 - you'll grow it one ticket at a time.
+A small spending/allowance tracker you run in the terminal. Start with
+taking a survey that stores data regarding your financial situation.
+Then, you can add transactions and remove them as you manage money.
+At any moment you can access the old data regarding your financial
+situation and find data regarding your transactions such the
+average spent per transaction or which ones are the most expensive.
+At any moment, enter "0" and you are done with the program.
 
 ## Run it
 
